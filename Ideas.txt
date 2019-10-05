@@ -1,0 +1,9 @@
+Ideas for Hackathon:
+1) Analytics => System with Login; Reporting system on Successful logins, etc. Suspicious activity, analyze data and send it to other users
+                and managers; use plots etc (can do in Python); can use networking and caching.
+             => Web-browsing analytics => sites visited, time-sharing, browsing-sequence, idling/stalling time.
+             => Keystroke analysis and typing assistance.
+2) Modelling/Simulation => 
+
+
+3) Animation => Scripts to do animation on Blendr!!!
