@@ -6,4 +6,4 @@ Ideas for Hackathon:
 2) Modelling/Simulation => 
 
 
-3) Animation => Scripts to do animation on Blendr!!!
+3) Animation => Scripts to do animation on Blender!!!
