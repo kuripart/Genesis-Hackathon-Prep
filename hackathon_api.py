@@ -51,6 +51,12 @@ class HTTP_Request:
 
         return response
 
+    def patch(self):
+        if self.req_type != "PATCH":
+            return "ERROR: Wrong request!"
+
+        response = requests.patch(url=self.url, data=self.data)
+
 
     def delete(self):
         if self.req_type != "DELETE":
@@ -146,11 +152,11 @@ def delete_kbase(kbase_id, server_name, url_suff, limit=None):
 
 ######################################################################
 ########### 3) CATEGORIES ###########
-#3.1 Create a category
-#3.2 view a list of categories
-#3.3 view a category
-#3.4 update a category
-#3.5 delete a category
+#4.1 Create a category
+#4.2 view a list of categories
+#4.3 view a category
+#4.4 update a category
+#4.5 delete a category
 
 payload_info_ctg = {"name":None,
                     "description":None}
@@ -223,6 +229,117 @@ def delete_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id):
                                  categoryId = ctg_id)
     req = HTTP_Request(full_addr, "DELETE")
     response = req.put() #This could be req.delete()
+
+######################################################################
+########### 4) DOCUMENTS ###########
+#5.1 Upload a single document
+#5.2 Update/Upload multiple documents
+#5.3 Update a single document
+#5.4 View all documents
+#5.5 View a single document
+#5.6 Delete a document
+
+doc_payload = {"question":"",
+               "answer":"",
+               "alternatives":""}
+
+def upload_doc(server_name, url_suff, kbase_id, lang_code, payload,
+               categories = {}):
+
+    full_addr = server_name + url_suff["upload_doc"]
+    full_addr = full_addr.format(knowledgebaseID = kbase_id,
+                                 languageCode = lang_code)
+    
+    req = HTTP_Request(full_addr, "POST")
+
+    req.append("type","Faq")
+    key = "faq"
+    val = {"question": payload["question"],
+           "answer":payload["answer"],
+           "alternatives":payload["alternatives"] }
+    req.append(key,val)
+    key = "categories"
+    val = []
+    for elem1,elem2 in categories.items():
+        val.append({elem1:elem2})
+    req.append(key,val)
+    req.append("externalUrl", "string")
+
+    response = req.post()
+
+#Payload test for mod_docs fn
+doc_payloads = [{"question":"","answer":"","alternatives":""},
+                {"question":"","answer":"","alternatives":""},
+                {"question":"","answer":"","alternatives":""}]
+
+def mod_docs(server_name, url_suff, kbase_id, lang_code, payloads,
+             categories = {}):
+
+    full_addr = server_name + url_suff["upload_doc"]
+    full_addr = full_addr.format(knowledgebaseID = kbase_id,
+                                 languageCode = lang_code)
+    
+    req = HTTP_Request(full_addr, "PATCH")
+
+    for payload in payloads:
+        
+        req.append("type","Faq")
+        key = "faq"
+        val = {"question": payload["question"],
+               "answer":payload["answer"],
+               "alternatives":payload["alternatives"] }
+        req.append(key,val)
+        key = "categories"
+        val = []
+        for elem1,elem2 in categories.items():
+            val.append({elem1:elem2})
+        req.append(key,val)
+        req.append("externalUrl", "string")
+
+        response = req.patch()
+
+def update_doc(server_name, url_suff, kbase_id, lang_code, payload,
+               doc_id, categories = {}):
+
+    full_addr = server_name + url_suff["update_doc"]
+    full_addr = full_addr.format(knowledgebaseID = kbase_id,
+                                 languageCode = lang_code,
+                                 documentId = doc_id)
+    
+    req = HTTP_Request(full_addr, "PUT")
+
+    req.append("type","Faq")
+    key = "faq"
+    val = {"question": payload["question"],
+           "answer":payload["answer"],
+           "alternatives":payload["alternatives"] }
+    req.append(key,val)
+    key = "categories"
+    val = []
+    for elem1,elem2 in categories.items():
+        val.append({elem1:elem2})
+    req.append(key,val)
+    req.append("externalUrl", "string")
+
+    response = req.put()
+
+def view_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
+
+    pass
+
+def view_docs(server_name, url_suff, kbase_id, lang_code):
+
+    pass
+
+def delete_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
+
+    pass
+
+    
+
+
+
+
 
 
 
