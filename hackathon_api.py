@@ -5,6 +5,7 @@
 # test the calls, to be implemented in the final hackthon project.
 
 import requests
+import suffix_keys.url_suff as suffs
 
 #Class to handle HTTP (Post/Get)
 class HTTP_Request:
@@ -60,7 +61,7 @@ class HTTP_Request:
 
     def post(self):
 
-        if self.req_type == "GET":
+        if self.req_type != "POST":
 
             return "ERROR: Wrong request!"
 
@@ -70,11 +71,28 @@ class HTTP_Request:
 
     def get(self):
 
-        if self.req_type == "POST":
+        if self.req_type == "GET":
 
             return "ERROR: Wrong request!"
 
         response = requests.get(url = self.url, data = self.data)
+
+        return response
+
+    def put(self):
+        if self.req_type != "PUT":
+            return "ERROR: Wrong request!"
+
+        response = requests.put(url=self.url, data=self.data)
+
+        return response
+
+
+    def delete(self):
+        if self.req_type != "DELETE":
+            return "ERROR: Wrong request!"
+
+        response = requests.delete(url=self.url, data=self.data)
 
         return response
 
@@ -87,11 +105,6 @@ class HTTP_Request:
 #3.5 delete a knowledge base
 
 server_name = "https://api.genesysapplkedresearch.com" #Central Server
-
-url_suff = {} #Contain all the URL suffixes for the API
-
-#KNOWLEDGE BASE INTERACTION SUFFIXES
-url_suff["create_kbase"] = "/v2/knowledge/knowledgebases" #POST
 
 kbase_responses = {}
 
@@ -107,6 +120,7 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses):
     payload_info <= dict, keys: name (of K_base), description, coreLanguage
 
     kbase_responses => dict, key
+    :return True if successful False if not
     '''
 
     #Check if # of databases exceeds limit (5)
@@ -129,34 +143,49 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses):
 
     return True
 
-#global test_dict
-test_dict = {}
-print("PRE: ", test_dict)
 
-def test(test_dict_in):
-    
-    print("In fn, pre: ", test_dict_in)
-    test_dict_in["alpha"] = "gamma"
-    print("In fn, post: ", test_dict_in)
+#GET Request
+def view_kbase(server_name, url_suff, limit=None, kbase_id=None):
+    full_addr = server_name + url_suff["view_kbase"]
+    if kbase_id:
+        full_addr += kbase_id
+        req = HTTP_Request(full_addr, "GET")
+        response = req.get()
 
-    return
+    else:
+        # if there is a limit, limit your request
+        if limit:
+            full_addr += '?limit={0}'.format(limit)
+            req = HTTP_Request(full_addr, "GET")
+            response = req.get()
+            response_list = []
+            response_list.append(response)
+            while response["nextUri"] != 'null':
+                full_addr = server_name + url_suff["view_kbase"]
+                full_addr += '?limit={0}'.format(limit)
+                full_addr += response["nextUri"]
+                req = HTTP_Request(full_addr, "GET")
+                response = req.get()
+                response_list.append(response)
 
-test(test_dict)
-print("POST: ", test_dict)
+    req = HTTP_Request(full_addr, "GET")
+
+    response = req.get()
 
 
-    
-    
+#PUT Request
+def update_kbase(kbase_id, server_name, url_suff, limit=None):
+    full_addr = server_name + url_suff["update_kbase"]
+    full_addr += kbase_id
+    req = HTTP_Request(full_addr, "PUT")
+    response = req.put()
+
+#DELETE Request
+def delete_kbase(kbase_id, server_name, url_suff, limit=None):
+    full_addr = server_name + url_suff["delete_kbase"]
+    full_addr += kbase_id
+    req = HTTP_Request(full_addr, "DELETE")
+    response = req.put() # This could be req.delete()
 
 
 
-
-
-    
-
-    
-
-    
-    
-
-    
