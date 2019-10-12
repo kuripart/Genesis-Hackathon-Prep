@@ -1,0 +1,43 @@
+This file contains the steps we need to take to transform the given API documentation to accomplish the following tasks:
+
+1) Create functions that implement web-interface API, and develop Unit Tests
+  a) Implement API functions for sections 3,4,5,6 - COMPLETED [3,4]
+  b) Write Unit Tests to test functions
+
+2) Identify Knowledge Base to Use
+  a) Per person, select 2 topics of interest as candidate knowledgebase topics. 
+  b) Per topic of interest, identify categories/sub-categories and populate a few sample FAQs in each sub-cat in the format:
+    <question, answer, [list of alternatives]>
+  c) Evaluate one another's kbase topics manually, but the person asking the question should not know the contents of the database 
+    (aka test ONE ANOTHER's db with sample questions).
+  d) Rank kbase topics by <amount of readily available info (aka online sources), our evaluation (manual)> and select 1 topic to move
+    forth with!
+
+3) Training: Assume 1 Knowledge Base, Limit 500 FAQs in KBase, In private repo we have > 500 FAQs
+  a) Start with N FAQs about the topic. Potential Algorithm for automated training:
+    - Identify FAQs by ID (interally)
+    - Establish a validation set (fixed number of questions) and an empty training set.
+    - Feed in R random FAQs into model and train model through API calls. Note down the same questions into the training set.
+    - Test validation set against knowledge base and report a correctness total (fraction of questions answered correctly).
+    - Initialize first model as best model.
+    WHILE (fraction != 1) AND (trainer wants to keep training):
+      IF (number of questions in KBase == 500):
+        Delete [%] of questions from KBase & also remove said questions from training set.
+      
+      From the list of questions NOT in the Knowledge Base, add X questions to the to the Knowledge Base.
+      
+      Train Model.
+      
+      Run Training and Validation sets and get scores.
+      
+      If current model performs better than the previous best model:
+        store current model ID & question IDs into the best model datastructure.
+        
+      Increment training session #; if session number % (training-batch-size) == 0 -> ask user if they wanna keep training ...
+     
+     b) If applicable, extrapolate algorithm to encompass up to 5 knowledge bases
+    
+4) Features
+  a) Correlate malformed user query into closest good query
+  
+  b) Create generic knowledge bases that pre-process/post-process central KBase data.
