@@ -109,7 +109,7 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses):
 
 
 #GET Request
-def view_kbase(server_name, url_suff, limit=None, kbase_id=None):
+def view_kbase(server_name, url_suff, limit=1, kbase_id=None):
     full_addr = server_name + url_suff["view_kbase"]
     if kbase_id:
         full_addr += kbase_id
@@ -117,24 +117,18 @@ def view_kbase(server_name, url_suff, limit=None, kbase_id=None):
         response = req.get()
 
     else:
-        # if there is a limit, limit your request
-        if limit:
+        full_addr += '?limit={0}'.format(limit)
+        req = HTTP_Request(full_addr, "GET")
+        response = req.get()
+        response_list = []
+        response_list.append(response)
+        while response["nextUri"] != 'null':
+            full_addr = server_name + url_suff["view_kbase"]
             full_addr += '?limit={0}'.format(limit)
+            full_addr += response["nextUri"]
             req = HTTP_Request(full_addr, "GET")
             response = req.get()
-            response_list = []
             response_list.append(response)
-            while response["nextUri"] != 'null':
-                full_addr = server_name + url_suff["view_kbase"]
-                full_addr += '?limit={0}'.format(limit)
-                full_addr += response["nextUri"]
-                req = HTTP_Request(full_addr, "GET")
-                response = req.get()
-                response_list.append(response)
-
-    req = HTTP_Request(full_addr, "GET")
-
-    response = req.get()
 
 #PUT Request
 def update_kbase(kbase_id, server_name, url_suff, limit=None):
@@ -158,14 +152,59 @@ def delete_kbase(kbase_id, server_name, url_suff, limit=None):
 #3.4 update a category
 #3.5 delete a category
 
+payload_info_ctg = {"name":None,
+                    "description":None}
+
+kbase_categories = {}
+
 #PUT Request
-def create_ctg():
+def create_ctg(server_name, url_suff, payload_info_ctg, kbase_id, lang_code):
+    full_addr = server_name + url_suff["create_ctg"]
+    full_addr = full_addr.format(knowledgebaseId = kbase_id, languageCode = lang_code)
 
-    pass
+    req = HTTP_Request(full_addr, "POST")
 
-def view_ctg():
+    for key in payload_info_ctg.keys():
+        req.append(key, payload_info_ctg[key])
 
-    pass
+    response = req.post()
+
+    resp_kbase_id = response["knowledgeBase"]["id"]
+    ctg = response["id"]
+
+    if resp_kbase_id in kbase_categories.keys():
+        kbase_responses[resp_kbase_id].append(ctg)
+    else:
+        kbase_responses[resp_kbase_id] = [ctg]
+
+def view_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id=None, limit=1):
+    full_addr = server_name + url_suff["view_ctg"]
+    if ctg_id:
+        full_addr += '/{categoryId}'
+        full_addr = full_addr.format(knowledgebaseId=kbase_id,
+                                     languageCode=lang_code,
+                                     categoryId=ctg_id)
+        req = HTTP_Request(full_addr, "GET")
+        response = req.get()
+
+    else:
+        # if there is a limit, limit your request
+        full_addr += '?limit={limit_num}'
+        full_addr = full_addr.format(knowledgebaseId=kbase_id,
+                                     languageCode=lang_code,
+                                     categoryId=ctg_id,
+                                     limit_num = limit)
+        req = HTTP_Request(full_addr, "GET")
+        response = req.get()
+        response_list = []
+        response_list.append(response)
+        while response["nextUri"] != 'null':
+            full_addr = server_name + url_suff["view_kbase"]
+            full_addr += '?limit={0}'.format(limit)
+            full_addr += response["nextUri"]
+            req = HTTP_Request(full_addr, "GET")
+            response = req.get()
+            response_list.append(response)
 
 def update_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id):
 
