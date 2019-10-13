@@ -6,7 +6,7 @@
 
 
 import requests
-import suffix_keys.url_suff as suffs
+from suffix_keys import url_suff as suff
 
 server_name = "https://api.genesysapplkedresearch.com"  # Central Server
 

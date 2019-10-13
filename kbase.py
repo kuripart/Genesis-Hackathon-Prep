@@ -1,5 +1,5 @@
 from HTTPRequest import HTTPRequest
-import suffix_keys.url_suff as suffs
+from suffix_keys import url_suff as suff
 
 
 # 3) KNOWLEDGE BASES
@@ -16,11 +16,11 @@ payload_info = {"name": None,
 
 
 # POST Request
-def create_kbase(server_name, url_suff, payload_info, kbase_responses):
+def create_kbase(server_name, url_suff, payload_info, kbase_responses={}):
 
     # Check if # of databases exceeds limit (5)
     if len(kbase_responses.items()) == 5:
-        return False
+        return {},
 
     full_addr = server_name + url_suff["create_kbase"]
 
@@ -31,12 +31,16 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses):
 
     response = req.post()
 
-    resp_id = response["id"]
-    kbase_responses[resp_id] = (response["dateCreated"],
-                                response["dateModified"],
-                                response["selfUri"])
+    resp_id = response.json().get("id")
+    kbase_responses['status_code'] = response.status_code
+    if resp_id:
+        kbase_responses[resp_id] = (response["dateCreated"],
+                                    response["dateModified"],
+                                    response["selfUri"])
+    else:
+        return kbase_responses
 
-    return True
+    return kbase_responses
 
 
 # GET Request
@@ -62,17 +66,23 @@ def view_kbase(server_name, url_suff, limit=1, kbase_id=None):
 
 
 # PUT Request
-def update_kbase(kbase_id, server_name, url_suff, limit=None):
+def update_kbase(server_name, url_suff, kbase_id):
     full_addr = server_name + url_suff["update_kbase"]
     full_addr += kbase_id
     req = HTTPRequest(full_addr, "PUT")
     response = req.put()
+    response_result = response.json()
+    response_result['status_code'] = response.status_code
+    return response_result
 
 
 # DELETE Request
-def delete_kbase(kbase_id, server_name, url_suff, limit=None):
+def delete_kbase(server_name, url_suff, kbase_id):
     full_addr = server_name + url_suff["delete_kbase"]
     full_addr += kbase_id
     req = HTTPRequest(full_addr, "DELETE")
-    response = req.put()  # This could be req.delete()
+    response = req.delete()
+    response_result = response.json()
+    response_result['status_code'] = response.status_code
+    return response_result
 
