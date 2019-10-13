@@ -123,8 +123,7 @@ def view_kbase(server_name, url_suff, limit=1, kbase_id=None):
         full_addr += '?limit={0}'.format(limit)
         req = HTTP_Request(full_addr, "GET")
         response = req.get()
-        response_list = []
-        response_list.append(response)
+        response_list = [response]
         while response["nextUri"] != 'null':
             full_addr = server_name + url_suff["view_kbase"]
             full_addr += '?limit={0}'.format(limit)
@@ -147,7 +146,7 @@ def delete_kbase(kbase_id, server_name, url_suff, limit=None):
     full_addr = server_name + url_suff["delete_kbase"]
     full_addr += kbase_id
     req = HTTP_Request(full_addr, "DELETE")
-    response = req.put() # This could be req.delete()
+    response = req.put()  # This could be req.delete()
 
 
 ######################################################################
@@ -231,7 +230,7 @@ def delete_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id):
                                  languageCode=lang_code,
                                  categoryId=ctg_id)
     req = HTTP_Request(full_addr, "DELETE")
-    response = req.put() # This could be req.delete()
+    response = req.put()  # This could be req.delete()
 
 
 ######################################################################
