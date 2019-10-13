@@ -2,7 +2,7 @@
 # Date Created: 12 October, 2019
 # Program Name: hackathon_api.py
 # Program Description: This program contains API calls and algorithms to handle and
-#  test the calls, to be implemented in the final hackathon project.
+# test the calls, to be implemented in the final hackathon project.
 
 import requests
 import suffix_keys.url_suff as suffs
@@ -62,7 +62,7 @@ class HTTP_Request:
         return response
 
 # Tasks to accomplish:
-########### 3) KNOWLEDGE BASES ###########
+# 3) KNOWLEDGE BASES
 # 3.1 Create a knowledge base
 # 3.2 view a knowledge base
 # 3.3 view a list of knowledge bases
@@ -151,7 +151,7 @@ def delete_kbase(kbase_id, server_name, url_suff, limit=None):
 
 
 ######################################################################
-########### 3) CATEGORIES ###########
+# 4) CATEGORIES
 # 4.1 Create a category
 # 4.2 view a list of categories
 # 4.3 view a category
@@ -204,8 +204,7 @@ def view_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id=None, limit=1):
                                      limit_num = limit)
         req = HTTP_Request(full_addr, "GET")
         response = req.get()
-        response_list = []
-        response_list.append(response)
+        response_list = [response]
         while response["nextUri"] != 'null':
             full_addr = server_name + url_suff["view_kbase"]
             full_addr += '?limit={0}'.format(limit)
@@ -236,7 +235,7 @@ def delete_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id):
 
 
 ######################################################################
-########### 4) DOCUMENTS ###########
+# 5) DOCUMENTS
 # 5.1 Upload a single document
 # 5.2 Update/Upload multiple documents
 # 5.3 Update a single document
@@ -244,9 +243,9 @@ def delete_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id):
 # 5.5 View a single document
 # 5.6 Delete a document
 
-doc_payload = {"question":"",
-               "answer":"",
-               "alternatives":""}
+doc_payload = {"question": "",
+               "answer": "",
+               "alternatives": ""}
 
 
 def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, categories={}):
@@ -323,8 +322,8 @@ def update_doc(server_name, url_suff, kbase_id, lang_code, payload, doc_id, cate
     key = "categories"
     val = []
     for elem1,elem2 in categories.items():
-        val.append({elem1:elem2})
-    req.append(key,val)
+        val.append({elem1: elem2})
+    req.append(key, val)
     req.append("externalUrl", "string")
 
     response = req.put()
@@ -341,9 +340,26 @@ def view_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
     response = req.get()
 
 
-def view_docs(server_name, url_suff, kbase_id, lang_code):
+def view_docs(server_name, url_suff, kbase_id, lang_code, limit=1):
 
-    pass
+    full_addr = server_name + url_suff["view_docs"]
+    full_addr += '?limit={limit_num}'
+    full_addr = full_addr.format(knowledgebaseId=kbase_id,
+                                 languageCode=lang_code,
+                                 limit_num=limit)
+    req = HTTP_Request(full_addr, "GET")
+    response = req.get()
+    response_list = [response]
+    while response["nextUri"] != 'null':
+        full_addr = server_name + url_suff["view_docs"]
+        full_addr += '?limit={limit_num}'
+        full_addr = full_addr.format(knowledgebaseId=kbase_id,
+                                     languageCode=lang_code,
+                                     limit_num=limit)
+        full_addr += response["nextUri"]
+        req = HTTP_Request(full_addr, "GET")
+        response = req.get()
+        response_list.append(response)
 
 
 def delete_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
