@@ -1,3 +1,7 @@
+# WARNING: FILE NOT UP TO DATE
+# NOTE: THIS FILE SHOULD NOT BE EDITED AS THE API IS BEING HANDLED IN SEPARATE MODULES
+
+
 # Authors: Nithin Prasad and Partha Sarathi Kuri
 # Date Created: 12 October, 2019
 # Program Name: hackathon_api.py

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7362d1c8-ae82-4a92-9361-299ab8a7199d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTTPRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTTPRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST_documents.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST_documents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/suffix_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/suffix_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
