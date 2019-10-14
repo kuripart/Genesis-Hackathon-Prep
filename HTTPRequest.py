@@ -55,6 +55,8 @@ class HTTPRequest:
 
         response = requests.patch(url=self.url, data=self.data)
 
+        return response
+
     def delete(self):
         if self.req_type != "DELETE":
             return "ERROR: Wrong request!"
