@@ -4,8 +4,11 @@
     <list default="true" id="7362d1c8-ae82-4a92-9361-299ab8a7199d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTTPRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTTPRequest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEST_kbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST_kbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST_categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/TEST_categories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/categories.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/kbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suffix_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/suffix_keys.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +43,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TEST_kbase">
+  <component name="RunManager" selected="Python.TEST_categories">
+    <configuration name="TEST_categories" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Genesis-Hackathon-Prep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST_categories.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="TEST_kbase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Genesis-Hackathon-Prep" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,9 +110,11 @@
     <list>
       <item itemvalue="Python.playground" />
       <item itemvalue="Python.TEST_kbase" />
+      <item itemvalue="Python.TEST_categories" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TEST_categories" />
         <item itemvalue="Python.TEST_kbase" />
       </list>
     </recent_temporary>

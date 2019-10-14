@@ -22,18 +22,18 @@ def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, categories={
 
     req = HTTPRequest(full_addr, "POST")
 
-    req.append("type", "Faq")
+    req.payload_append("type", "Faq")
     key = "faq"
     val = {"question": payload["question"],
            "answer": payload["answer"],
            "alternatives": payload["alternatives"]}
-    req.append(key, val)
+    req.payload_append(key, val)
     key = "categories"
     val = []
     for elem1, elem2 in categories.items():
         val.append({elem1: elem2})
-    req.append(key, val)
-    req.append("externalUrl", "string")
+    req.payload_append(key, val)
+    req.payload_append("externalUrl", "string")
 
     response = req.post()
 
@@ -53,18 +53,18 @@ def mod_docs(server_name, url_suff, kbase_id, lang_code, payloads, categories={}
 
     for payload in payloads:
 
-        req.append("type", "Faq")
+        req.payload_append("type", "Faq")
         key = "faq"
         val = {"question": payload["question"],
                "answer": payload["answer"],
                "alternatives": payload["alternatives"]}
-        req.append(key, val)
+        req.payload_append(key, val)
         key = "categories"
         val = []
         for elem1, elem2 in categories.items():
             val.append({elem1: elem2})
-        req.append(key, val)
-        req.append("externalUrl", "string")
+        req.payload_append(key, val)
+        req.payload_append("externalUrl", "string")
 
         response = req.patch()
 
@@ -77,18 +77,18 @@ def update_doc(server_name, url_suff, kbase_id, lang_code, payload, doc_id, cate
 
     req = HTTPRequest(full_addr, "PUT")
 
-    req.append("type", "Faq")
+    req.payload_append("type", "Faq")
     key = "faq"
     val = {"question": payload["question"],
            "answer": payload["answer"],
            "alternatives": payload["alternatives"]}
-    req.append(key, val)
+    req.payload_append(key, val)
     key = "categories"
     val = []
     for elem1, elem2 in categories.items():
         val.append({elem1: elem2})
-    req.append(key, val)
-    req.append("externalUrl", "string")
+    req.payload_append(key, val)
+    req.payload_append("externalUrl", "string")
 
     response = req.put()
 

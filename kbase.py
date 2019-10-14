@@ -27,7 +27,7 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses={}):
     req = HTTPRequest(full_addr, "POST")
 
     for key in payload_info.keys():
-        req.append(key, payload_info[key])
+        req.payload_append(key, payload_info[key])
 
     response = req.post()
 
@@ -80,7 +80,7 @@ def update_kbase(server_name, url_suff, payload_info, kbase_id):
     full_addr += kbase_id
     req = HTTPRequest(full_addr, "PUT")
     for key in payload_info.keys():
-        req.append(key, payload_info[key])
+        req.payload_append(key, payload_info[key])
     response = req.put()
     response_result = response.json()
     response_result['status_code'] = response.status_code

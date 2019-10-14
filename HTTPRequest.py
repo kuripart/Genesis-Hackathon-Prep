@@ -22,7 +22,7 @@ class HTTPRequest:
         self.url = url_in
         self.req_type = req_type_in
 
-    def append(self, key, val):
+    def payload_append(self, key, val):
         self.data[key] = val
 
     def post(self):
