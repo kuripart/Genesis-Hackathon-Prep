@@ -9,7 +9,7 @@ Further tests may be added after full access to the Genesys API
 '''
 
 
-class TestCategories(unittest.TestCase):
+class TestDocuments(unittest.TestCase):
 
     def test_upload_doc(self):
         server_name = 'https://httpbin.org/post'
