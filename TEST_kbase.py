@@ -23,7 +23,10 @@ class TestKbase(unittest.TestCase):
     def test_update_kbase(self):
         server_name = 'https://httpbin.org/put'
         url_suff = {"update_kbase": ''}
-        response = update_kbase(server_name, url_suff, '')
+        payload_info = {"name": None,
+                        "description": None,
+                        "coreLanguage": "en-US"}
+        response = update_kbase(server_name, url_suff, payload_info, '')
         self.assertEqual(response['status_code'], 200)
 
     def test_delete_kbase(self):
@@ -31,6 +34,12 @@ class TestKbase(unittest.TestCase):
         url_suff = {"delete_kbase": ''}
         response = delete_kbase(server_name, url_suff, '')
         self.assertEqual(response['status_code'], 200)
+
+    def test_view_kbase(self):
+        server_name = 'https://httpbin.org/get'
+        url_suff = {"view_kbase": ''}
+        response_list = view_kbase(server_name, url_suff)
+        self.assertTrue(len(response_list) > 0)
 
 
 if __name__ == '__main__':

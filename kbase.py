@@ -46,30 +46,41 @@ def create_kbase(server_name, url_suff, payload_info, kbase_responses={}):
 # GET Request
 def view_kbase(server_name, url_suff, limit=1, kbase_id=None):
     full_addr = server_name + url_suff["view_kbase"]
+    response_list = []
     if kbase_id:
         full_addr += kbase_id
         req = HTTPRequest(full_addr, "GET")
         response = req.get()
-
+        response_dict = response.json()
+        if response_dict.status_code == 200:
+            response_list.append(response_dict)
     else:
         full_addr += '?limit={0}'.format(limit)
         req = HTTPRequest(full_addr, "GET")
         response = req.get()
-        response_list = [response]
-        while response["nextUri"] != 'null':
-            full_addr = server_name + url_suff["view_kbase"]
-            full_addr += '?limit={0}'.format(limit)
-            full_addr += response["nextUri"]
-            req = HTTPRequest(full_addr, "GET")
-            response = req.get()
-            response_list.append(response)
+        response_dict = response.json()
+        if response.status_code == 200:
+            response_list = [response_dict]
+            while response_dict.get("nextUri", 'null') != 'null':
+                full_addr = server_name + url_suff["view_kbase"]
+                full_addr += '?limit={0}'.format(limit)
+                full_addr += response_dict.get("nextUri")
+                req = HTTPRequest(full_addr, "GET")
+                response = req.get()
+                response_dict = response.json()
+                if response.status_code == 200:
+                    response_list.append(response_dict)
+
+    return response_list
 
 
 # PUT Request
-def update_kbase(server_name, url_suff, kbase_id):
+def update_kbase(server_name, url_suff, payload_info, kbase_id):
     full_addr = server_name + url_suff["update_kbase"]
     full_addr += kbase_id
     req = HTTPRequest(full_addr, "PUT")
+    for key in payload_info.keys():
+        req.append(key, payload_info[key])
     response = req.put()
     response_result = response.json()
     response_result['status_code'] = response.status_code

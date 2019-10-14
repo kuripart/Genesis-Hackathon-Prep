@@ -34,7 +34,7 @@ class HTTPRequest:
         return response
 
     def get(self):
-        if self.req_type == "GET":
+        if self.req_type != "GET":
             return "ERROR: Wrong request!"
 
         response = requests.get(url=self.url, data=self.data)
