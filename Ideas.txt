@@ -6,3 +6,7 @@ Ideas for Hackathon:
 
 
 3) Animation => Scripts to do animation on Blender!!!
+
+4) Web Scrapping => https://github.com/kuripart/web_scraping_py
+
+5) Use Django for UI/Web Services
