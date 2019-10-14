@@ -31,7 +31,7 @@ class HTTP_Request:
         if self.req_type != "POST":
             return "ERROR: Wrong request!"
 
-        response = requests.post(url = self.url, data = self.data)
+        response = requests.post(url=self.url, data=self.data)
 
         return response
 
@@ -74,7 +74,7 @@ class HTTP_Request:
 # 3.5 delete a knowledge base
 
 
-server_name = "https://api.genesysapplkedresearch.com" #Central Server
+server_name = "https://api.genesysapplkedresearch.com" # Central Server
 
 kbase_responses = {}
 
@@ -204,7 +204,7 @@ def view_ctg(server_name, url_suff, kbase_id, lang_code, ctg_id=None, limit=1):
         full_addr = full_addr.format(knowledgebaseId=kbase_id,
                                      languageCode=lang_code,
                                      categoryId=ctg_id,
-                                     limit_num = limit)
+                                     limit_num=limit)
         req = HTTP_Request(full_addr, "GET")
         response = req.get()
         response_list = [response]
@@ -262,8 +262,8 @@ def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, categories={
     req.append("type", "Faq")
     key = "faq"
     val = {"question": payload["question"],
-           "answer":payload["answer"],
-           "alternatives":payload["alternatives"] }
+           "answer": payload["answer"],
+           "alternatives": payload["alternatives"]}
     req.append(key, val)
     key = "categories"
     val = []
@@ -320,11 +320,11 @@ def update_doc(server_name, url_suff, kbase_id, lang_code, payload, doc_id, cate
     key = "faq"
     val = {"question": payload["question"],
            "answer":payload["answer"],
-           "alternatives":payload["alternatives"] }
+           "alternatives":payload["alternatives"]}
     req.append(key,val)
     key = "categories"
     val = []
-    for elem1,elem2 in categories.items():
+    for elem1, elem2 in categories.items():
         val.append({elem1: elem2})
     req.append(key, val)
     req.append("externalUrl", "string")
@@ -373,16 +373,3 @@ def delete_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
                                  documentId=doc_id)
     req = HTTP_Request(full_addr, "DELETE")
     response = req.put()  # This could be req.delete()
-
-    
-
-
-
-
-
-
-
-
-
-
-
