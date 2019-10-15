@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="{% static 'search.css' %}">
 </head>
 <body>
-<div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Search the Knowledge Base">
-    <a class="search-btn" href="#">
-        <i class="fas fa-search"></i>
-    </a>
-</div>
+
+<form action="/submit/" method="post">
+   {% csrf_token %}
+   <div class="search-box">
+    <input class="search-txt" type="text" name="search" placeholder="Search the Knowledge Base">
+    <input type="submit" class="search-btn" value="GO!">
+    </input>
+   </div>
+</form>
 
 </body>
 </html>

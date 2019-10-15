@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7362d1c8-ae82-4a92-9361-299ab8a7199d" name="Default Changelist" comment="" />
+    <list default="true" id="7362d1c8-ae82-4a92-9361-299ab8a7199d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon_04/hackathon_04/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon_04/hackathon_04/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon_04/hackathon_04/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon_04/hackathon_04/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hackathon_04/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon_04/templates/search.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
