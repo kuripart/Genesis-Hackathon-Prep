@@ -1,4 +1,4 @@
-# Get a misc. Q&As from https://www.triviaquestionss
+# Get misc. Q&As from https://www.triviaquestionss
 
 import sys, os, requests, bs4
 
