@@ -1,5 +1,5 @@
-from .HTTPRequest import HTTPRequest
-from .suffix_keys import url_suff as suff
+from HTTPRequest import HTTPRequest
+from suffix_keys import url_suff as suff
 
 
 # 5) DOCUMENTS
