@@ -1,5 +1,5 @@
-from .HTTPRequest import HTTPRequest
-from .suffix_keys import url_suff as suff
+from HTTPRequest import HTTPRequest
+from suffix_keys import url_suff as suff
 
 
 # 5) DOCUMENTS
@@ -15,16 +15,16 @@ doc_payload = {"question": "",
                "alternatives": ""}
 
 
-def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, categories={}):
+def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, org_id, token, categories={}):
     full_addr = server_name + url_suff["upload_doc"]
-    full_addr = full_addr.format(knowledgebaseID=kbase_id,
+    full_addr = full_addr.format(knowledgebaseId=kbase_id,
                                  languageCode=lang_code)
     req = HTTPRequest(full_addr, "POST")
-    req.payload_append("type", "Faq")
+    req.payload_append("type", "faq")
     key = "faq"
     val = {"question": payload["question"],
            "answer": payload["answer"],
-           "alternatives": payload["alternatives"]}
+           "alternatives": []}
     req.payload_append(key, val)
     key = "categories"
     val = []
@@ -32,9 +32,16 @@ def upload_doc(server_name, url_suff, kbase_id, lang_code, payload, categories={
         val.append({elem1: elem2})
     req.payload_append(key, val)
     req.payload_append("externalUrl", "")
-    response = req.post()
-    return response.status_code
 
+    req.add_header("Content-Type", "application/json")
+    req.add_header("organizationid", org_id)
+    req.add_header("token", token)
+    req.add_header("cache-control", "no-cache")
+
+    response = req.post()
+    print("RESPONSE CODE: ",response.status_code)
+    print("RESPONSE JSON: ",response.json())
+    return response.status_code
 
 # Payload test for mod_docs fn
 doc_payloads = [{"question": "", "answer": "", "alternatives": ""},
@@ -52,7 +59,7 @@ def mod_docs(server_name, url_suff, kbase_id, lang_code, payloads, categories={}
 
     for payload in payloads:
         request_count += 1
-        req.payload_append("type", "Faq")
+        req.payload_append("type", "faq")
         key = "faq"
         val = {"question": payload["question"],
                "answer": payload["answer"],
