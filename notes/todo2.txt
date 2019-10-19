@@ -1,0 +1,18 @@
+APPLICATION TODO:
+
+1. PIE/Any graph showing probs: 
+2. Feedback loop - get question from user, get the answer (these are not in KB) update KB and re-train
+3. Categories - segregate data, pre-classifying [optional]
+
+
+==========================================================
+A. INTRO TO DATA
+1. Select topic
+2. Add 100 or so questions into KB
+3. Create a set of test questions that can be used to the KB
+4. Validate the training model/input questions. 
+
+B. INTRO TO PRESENTATION
+1. GUI - https://www.geeksforgeeks.org/python-gui-tkinter/
+2. Q&A logic
+3. Button to show chart + feedback
