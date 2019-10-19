@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Parth\Documents\Projects\Genesis_2019\hackathon_02\Genesis-Hackathon-Prep\venv"
+$env:VIRTUAL_ENV="C:\Users\nithi\Desktop\Coding Questions\Genesys Hackathon\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name

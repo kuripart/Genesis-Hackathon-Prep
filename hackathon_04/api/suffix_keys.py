@@ -17,3 +17,8 @@ for key in ("upload_doc", "mod_docs", "view_docs"):
 for key in ("update_doc", "view_doc", "delete_doc"):
     url_suff[key] = "/v2/knowledge/knowledgebases/{knowledgebaseId}/language/{languageCode}/documents/{documentId}"
 
+url_suff["train_model"] = "/api/v2/knowledge/knowledgebases/{knowledgebaseId}/languages/{languageCode}/trainings"
+url_suff["view_trained_model"] = "/api/v2/knowledge/knowledgebases/{knowledgebaseId}/languages/{languageCode}/trainings/{trainingId}"
+url_suff["view_trained_model_list"] = "/api/v2/knowledge/knowledgebases/{knowledgebaseId}/languages/{languageCode}/trainings?limit={limit}"
+
+url_suff["search"] = "/api/v2/knowledge/knowledgebases/{knowledgebaseId}/search"
