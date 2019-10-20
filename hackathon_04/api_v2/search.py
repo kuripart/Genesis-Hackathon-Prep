@@ -32,9 +32,6 @@ def search(server_name, url_suff, kbase_id, req_payload, org_id, token, search_s
     response = (req.post())
     print("Response status: ", response.status_code)
     resp_json = response.json()
-    if resp_json.get("results"):
-        results = resp_json["results"]
-    else:
-        results = []
+    results = resp_json["results"]
 
     return results
