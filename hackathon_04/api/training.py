@@ -42,8 +42,9 @@ def view_trained_model(server_name, url_suff, kbase_id, lang_code,training_id, o
     response = req.get()
     print(response.status_code)
     resp_json = response.json()
+    print("json response: ",resp_json)
 
-    return resp_json["status"]
+    return resp_json
 
 
 

@@ -1,6 +1,5 @@
 from HTTPRequest import HTTPRequest
 from suffix_keys import url_suff as suff
-<<<<<<< HEAD
 
 import requests
 import json
@@ -17,9 +16,11 @@ if __name__ == "__main__":
     client_secret = "7ab90651-f1c6-4756-a980-3813bf682198"
     token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjNhZTZiZDhiLTIzYjYtNDdjNy1hOWEwLThkYzU2ODMzY2ExOCIsImV4cCI6MTU3MTUyNjUxMiwiaWF0IjoxNTcxNTIyOTEyfQ.HVelm58b8HA4yx1PASrO84g8wAiQRCWtv73gYz7WtOQ"
 
-    #payload_info = {"name": "Sample KBase",
+
+    # payload_info = {"name": "Sample KBase",
     #                "description": "Testing our preliminary kbase!",
-     #               "coreLanguage": "en-US"}
+    #                "coreLanguage": "en-US"}
+
 
     #kbase_responses = {}
 
@@ -66,10 +67,3 @@ if __name__ == "__main__":
     results = search.search(server_name, suff, kbase1_id, payload, org_id, token)
     print(results)
     #print(kbase_responses)
-=======
-import kbase
-
-if __name__ == '__main__':
-    q = HTTPRequest('A', 'B')
-    kbase.create_kbase('a', 's', 'a')
->>>>>>> fd1799c14c2e68c12f1b4bc512c9aab808d37bd6

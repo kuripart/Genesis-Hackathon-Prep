@@ -1,10 +1,7 @@
 from HTTPRequest import HTTPRequest
 from suffix_keys import url_suff as suff
-<<<<<<< HEAD
 import suffix_keys
 import json
-=======
->>>>>>> fd1799c14c2e68c12f1b4bc512c9aab808d37bd6
 
 
 # 3) KNOWLEDGE BASES
@@ -55,10 +52,12 @@ def create_kbase(server_name, url_suff, payload_info, org_id, token,kbase_respon
 
 # GET Request
 def view_kbase(server_name, url_suff, org_id, token, limit=1, kbase_id=None):
+
     full_addr = server_name + url_suff["view_kbase"]
     response_list = []
+    print('kbase_id in view_kbase', kbase_id)
     if kbase_id:
-        full_addr += kbase_id
+        full_addr += '/' + kbase_id
         req = HTTPRequest(full_addr, "GET")
         req.add_header("Content-Type", "application/json")
         req.add_header("organizationid", org_id)
@@ -76,12 +75,12 @@ def view_kbase(server_name, url_suff, org_id, token, limit=1, kbase_id=None):
         req.add_header("token", token)
         req.add_header("cache-control", "no-cache")
         response = req.get()
-        print("Response:",response.json())
+        print("Response:", response)
         response_dict = response.json()
         if response.status_code == 200:
 
             response_list = response_dict["entities"]
-            print("Resp List",response_list)
+            print("Resp List", response_list)
 
             # while response_dict.get("nextUri") != None:
             #     print("in loop")
@@ -113,14 +112,20 @@ def update_kbase(server_name, url_suff, payload_info, kbase_id):
     response_result['status_code'] = response.status_code
     return response_result
 
+def garbles():
+    print("YOU GARBAGE BOIIII")
 
 # DELETE Request
-def delete_kbase(server_name, url_suff, kbase_id):
+def delete_kbase(org_id, token, server_name, url_suff, kbase_id):
+    print("IN DELETE!!!!")
     full_addr = server_name + url_suff["delete_kbase"]
     full_addr += kbase_id
     req = HTTPRequest(full_addr, "DELETE")
+    req.add_header("Content-Type", "application/json")
+    req.add_header("organizationid", org_id)
+    req.add_header("token", token)
+    req.add_header("cache-control", "no-cache")
     response = req.delete()
-    response_result = response.json()
-    response_result['status_code'] = response.status_code
-    return response_result
+    print("Response: ",response,", Response Code:", response.status_code)
+    return response.status_code
 

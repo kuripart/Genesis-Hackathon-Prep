@@ -7,10 +7,8 @@
 
 import requests
 from suffix_keys import url_suff as suff
-<<<<<<< HEAD
 import json
-=======
->>>>>>> fd1799c14c2e68c12f1b4bc512c9aab808d37bd6
+
 
 server_name = "https://api.genesysappliedresearch.com"  # Central Server
 
@@ -26,6 +24,8 @@ class HTTPRequest:
 
         self.url = url_in
         self.req_type = req_type_in
+        self.headers = {}
+        self.data = {}
 
     def payload_append(self, key, val):
         self.data[key] = val
@@ -66,7 +66,15 @@ class HTTPRequest:
         if self.req_type != "PUT":
             return "ERROR: Wrong request!"
 
-        response = requests.put(url=self.url, data=self.data)
+        print("Request URL: ",self.url)
+        print("Data: ",self.data)
+        print("Headers: ",self.headers)
+
+        data_dumps = json.dumps(self.data)
+        #headers_dumps = json.dumps(self.headers)
+        #print("Data_dumps: ", data_dumps)
+        #print("Headers_dumps",headers_dumps)
+        response = requests.put(url=self.url, data=data_dumps, headers=self.headers)
 
         return response
 
@@ -74,7 +82,15 @@ class HTTPRequest:
         if self.req_type != "PATCH":
             return "ERROR: Wrong request!"
 
-        response = requests.patch(url=self.url, data=self.data)
+        print("Request URL: ",self.url)
+        print("Data: ",self.data)
+        print("Headers: ",self.headers)
+
+        data_dumps = json.dumps(self.data)
+        #headers_dumps = json.dumps(self.headers)
+        #print("Data_dumps: ", data_dumps)
+        #print("Headers_dumps",headers_dumps)
+        response = requests.patch(url=self.url, data=data_dumps, headers=self.headers)
 
         return response
 
@@ -82,6 +98,14 @@ class HTTPRequest:
         if self.req_type != "DELETE":
             return "ERROR: Wrong request!"
 
-        response = requests.delete(url=self.url, data=self.data)
+        print("Request URL: ",self.url)
+        print("Data: ",self.data)
+        print("Headers: ",self.headers)
+
+        data_dumps = json.dumps(self.data)
+        #headers_dumps = json.dumps(self.headers)
+        #print("Data_dumps: ", data_dumps)
+        #print("Headers_dumps",headers_dumps)
+        response = requests.delete(url=self.url, data=data_dumps, headers=self.headers)
 
         return response

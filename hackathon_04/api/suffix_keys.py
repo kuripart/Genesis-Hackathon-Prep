@@ -2,8 +2,10 @@ url_suff = {}  # Contain all the URL suffixes for the API
 
 
 # KNOWLEDGE BASE INTERACTION SUFFIXES
-for key in ("create_kbase", "view_kbase", "update_kbase", "delete_kbase"):
-    url_suff[key] = "/v2/knowledge/knowledgebases"
+url_suff["create_kbase"] = "/v2/knowledge/knowledgebases"
+url_suff["view_kbase"] = "/v2/knowledge/knowledgebases"
+for key in ("update_kbase", "delete_kbase"):
+    url_suff[key] = "/v2/knowledge/knowledgebases/"
 
 url_suff["create_ctg"] = "/v2/knowledge/knowledgebases/{knowledgebaseId}/languages/{languageCode}/categories"
 url_suff["view_ctg"] = "/v2/knowledge/knowledgebases/{knowledgebaseId}/languages/{languageCode}/categories"

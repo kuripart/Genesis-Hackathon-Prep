@@ -100,18 +100,20 @@ def update_doc(server_name, url_suff, kbase_id, lang_code, payload, doc_id, cate
     return response.status_code
 
 
-def view_doc(server_name, url_suff, kbase_id, lang_code, doc_id):
+def view_doc(server_name, url_suff, kbase_id, lang_code, doc_id, org_id, token):
     full_addr = server_name + url_suff["view_doc"]
     full_addr = full_addr.format(knowledgebaseId=kbase_id,
                                  languageCode=lang_code,
                                  documentId=doc_id)
-    req = HTTPRequest(full_addr, "GET")
-    response_list = []
-    response = req.get()
-    if response.status_code == 200:
-        response_list.append(response.json())
-    return response_list
 
+    req = HTTPRequest(full_addr, "GET")
+    #response_list = []
+    req.add_header("Content-Type", "application/json")
+    req.add_header("organizationid", org_id)
+    req.add_header("token", token)
+    req.add_header("cache-control", "no-cache")
+    response = req.get()
+    return response.json()
 
 def view_docs(server_name, url_suff, kbase_id, lang_code, limit=1):
     full_addr = server_name + url_suff["view_docs"]

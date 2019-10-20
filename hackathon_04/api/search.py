@@ -9,7 +9,8 @@ payload_in = {
     "documentType":"faq"
 }
 
-def search(server_name, url_suff, kbase_id, req_payload, org_id, token):
+
+def search(server_name, url_suff, kbase_id, req_payload, org_id, token, search_size=1):
 
     full_addr = server_name + url_suff["search"]
     full_addr = full_addr.format(knowledgebaseId=kbase_id)
@@ -18,10 +19,10 @@ def search(server_name, url_suff, kbase_id, req_payload, org_id, token):
 
     for key in req_payload.keys():
         req.payload_append(key,req_payload[key])
-    req.payload_append("pageSize",3)
-    req.payload_append("pageNumber",1)
-    req.payload_append("languageCode","en-US")
-    req.payload_append("documentType","Faq")
+    req.payload_append("pageSize", search_size)
+    req.payload_append("pageNumber", 1)
+    req.payload_append("languageCode", "en-US")
+    req.payload_append("documentType", "Faq")
 
     req.add_header("Content-Type", "application/json")
     req.add_header("organizationid", org_id)

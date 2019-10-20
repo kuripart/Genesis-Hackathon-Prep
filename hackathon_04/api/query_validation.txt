@@ -1,0 +1,300 @@
+OUTPUT FORMAT: <Answer>,<Result>,<Question>Rhode Island, Rhode Island, What's the smallest state of the U.S.
+Wisconsin., Wisconsin., Which state is the Lake Winnebago situated?
+Missouri, Missouri, What's the longest river in the United States?
+Alaska, Alaska, Name the largest American state by area?
+San Juan Mountains, San Juan Mountains, Where does the Rio Grande river rise from?
+California, California, In which city the Bristlecone pine found?
+South Dakota, South Dakota, In which state, Mount Rushmore is located?
+Lake Superior, Lake Superior, Name the largest lake in the U.S.
+Tallahassee., Tallahassee., Name the capital of Florida.
+Alaska, Alaska, Which state has the longest coastline in the United States?
+Honolulu, Hawaii., Honolulu, Hawaii., Where is Iolani Palace located?
+Minnesota, Minnesota, Name the U.S State nicknamed as 'The Land of 10,000 Lakes'.
+Hawaii., Hawaii., Where is the mountain Mauna Kea located?
+Crater Lake., Crater Lake., Name the deepest lake of the United States.
+New Jersey., New Jersey., In which U.S. State the Atlantic City is located?
+Kekee Stream, Kekee Stream, The Waipio Waterfall in the U.S, originates from which stream?
+Montana, Montana, Which city shares the border with Canada?
+In Oregon., In Oregon., Where is Crater Lake situated?
+Alaska., Alaska., Name the northernmost, easternmost, and the westernmost state.
+Four states share a border with Mexico., Four states share a border with Mexico., How many states have a border with Mexico?
+District., District., Is Columbia a state or a district?
+Hawaii., Hawaii., Which U.S. state has the highest number of endangered species?
+Manhattan, NY City., Manhattan, NY City., Which place has 43 buildings with their own zip code?
+Hawaii., Hawaii., In which state the Big Island is situated?
+36-miles, 36-miles, How long is the Niagara Fall Channel?
+16 US States are landlocked., 16 US States are landlocked., How many U.S. states are landlocked?
+Maine., Maine., Which U.S. state touches only one state?
+Alaska and Hawaii., Alaska and Hawaii., Which two states do not share a border with any other U.S. state?
+Arizona, Arizona, The great Canyon Park is situated in which state?
+Los Angeles., Los Angeles., Which state is the second largest by population?
+Phoenix., Phoenix., Name the capital of Arizona.
+Death Valley., Death Valley., Name the lowest point of the country?
+Mount McKinley., Mount McKinley., Name the tallest mountain of the U.S.
+6 regions in US, 6 regions in US, How many regions is the United States divided into?
+Denali, Denali, Name the highest point of the the United States?
+California., California., Which state the Death Valley is situated in?
+Lake Michigan., Lake Michigan., Which lake is located entirely in the border of U.S.?
+Pierre, Pierre, What is the capital of South Dakota?
+California, California, Sacramento is the capital of which state?
+Florida, Florida, Where is Lake Okeechobee situated?
+Rhode Island., Rhode Island, Name the smallest state of U.S.?
+Alaska, Alaska, Name the largest state of U.S.?
+Maine., Maine., Which State is the northernmost community of New England?
+Maryland and Virginia, Maryland and Virginia, Which two states donated land for the creation of Washington D.C?
+River Missouri, River Missouri, Name the longest river in U.S.
+20 percent., 20 percent., How much oxygen of the world is supplied by Amazon rainforest?
+The Great Canyon., The Great Canyon., Name the largest canyon of the world?
+Chicago., Chicago., Which U.S. city has the largest population of Polish?
+Woodward Avenue, Detroit, Woodward Avenue, Detroit, Name the place of ever first paved road.
+El Pueblo de Nuestra Senora la Reina de Los Angeles de Porciuncula, Los Angeles., What is the full name of Los Angeles?
+Alaska, Alaska, Name the only state that enters in Eastern Hemisphere?
+Between the Yucatan and Florida peninsulas., Between the Yucatan and Florida peninsulas., Where is the Gulf of Mexico situated?
+New Jersey, New Jersey, Which U.S. state is known as the Garden state?
+Mountain Andes., Mountain Andes., Which mountains of South America are growing higher?
+Colorado River, Colorado River, Which river flows through the great Canyon?
+Panama, Panama, In which country Panama Canal is situated?
+Canada, Canada, Which country has the most of the natural lakes?
+Honshu, Honshu, Name the main Island of Japan?
+Russia, Russia, Which country ranks first in oil and gas?
+Niagara Falls stands at 167 feet tall, Niagara Falls stands at 167 feet tall, What is the total height of Niagara Falls?
+Nepal, Nepal, Where is the Mountain Lhotse situated?
+Iceland., Iceland., Which only part of the Mid-Atlantic range is above water?
+In Canada, In Canada, Where is Mountain Thor situated?
+Hungary, Hungary, Kekes is the highest geographical point of which country?
+America and Canada, America and Canada, Which countries share the largest International border?
+Germany., Germany., Which country borders Switzerland to the North?
+No one owns Antarctica, No one owns Antarctica, Who owns the land of Antarctica?
+Canada, Canada, Name the country which is home to the Lake Great Slave?
+North America., Asia, Name the third largest continent in the world.
+Arctic and Antarctic., Arctic and Antarctic., In which regions of the world, 99 percent of the glaciers are present?
+Pakistan, Pakistan, Where is Nanda Parbat situated?
+Istanbul, Istanbul, Which only city is present in Asia and Europe?
+Canada., Canada., Which country covers the 9 percent of the fresh water of the world?
+One Thousand Meters, One Thousand Meters, How much is the maximum limit of mountains in England?
+5 seas border continent Asia, 5 seas border continent Asia, How many seas border continent Asia?
+3 oceans border continent Asia, 3 oceans border continent Asia, How many oceans border continent Asia?
+16 countries share border with Russia, 16 countries share border with Russia, How many countries share their border with Russia?
+Mont Blanc, Mont Blanc, What is the highest point in France?
+15 Parks in UK, 15 Parks in UK, How many parks are there in the UK?
+Asia, Asia, In which continent Himalaya mountain range is situated?
+Russia., Russia., Name the largest country in the world by area.
+West Asia, West Asia, Where is Arabian desert situated?
+23 countries included in North America, 23 countries included in North America, How many countries are included in North America?
+22 percent of the area of Egypt is acquired by the River Nile, 22 percent of the area of Egypt is acquired by the River Nile, How much area of Egypt is acquired by the River Nile?
+Strait of Gibraltar, Strait of Gibraltar, What strait divides Morocco and Spain?
+Ben Nevis, Ben Nevis, Name the highest mountain in the United Kingdom?
+8th largest island, 8th largest island, In terms of island sizes, how far from the top is UK?
+The UK shares a single border with the Northern Ireland, The UK shares a single border with the Northern Ireland, How many borders the UK shares with Northern Ireland.
+3, 3, How many oceans have a coast on Russia?
+England, Scotland, Northern Island, and Wales., England, Scotland, Northern Island, and Wales., Name the countries which made up United Kingdom.
+Italy, Italy, Name the country which has a boot-shaped?
+Brazil, Brazil, Where is the River Amazon situated?
+Kangaroo and Koala, Kangaroo and Koala, Name the animals which are present nowhere than Australia.
+1200 Miles., 1200 Miles., How long is the Great Barrier Reef of Australia?
+New Zealand, New Zealand, Wellington is the capital of which Island nation?
+Carcross Desert., Carcross Desert., Name the smallest desert of the world.
+Norway, Norway, Where is the Monge Waterfall situated?
+River Tigris, River Tigris, Which river runs through Baghdad?
+Asia, Asia, Name the largest continent of the world.
+Pakistan., Pakistan., Where is Thar Desert situated?
+Australia., Australia., Name the smallest continent of the world.
+River Ganga, River Ganga, Name the longest river of India?
+Between Asia and Africa, Between Asia and Africa, Where is red sea situated?
+Greenland, Greenland, Name the largest Island in the world?
+Arabian Peninsula., Arabian Peninsula., Name the largest Peninsula of the world?
+Asia, Asia, In which continent the River Yenisey-Angara situated?
+Manitoulin Island, Manitoulin Island, Name the world's largest lake island?
+Sahara Desert., Sahara Desert., Name the largest desert of the world.
+100,000., 100,000., How many rivers are in Russia?
+8 times., 8 times., India is how many times larger than Japan?
+Antarctic Polar desert., Antarctic Polar desert., Name the coldest desert of the world.
+Finland, Finland, Which is the greenest country in the world?
+12 seas., 12 seas., How many seas bordered the territory of Russia?
+70., 70., How many sanctuaries are in Russia?
+Russian Federation, Russian Federation, Which country of Europe has the highest population?
+Tibetan Plateau, Tibetan Plateau, Name the largest Plateau in the world.
+London, UK, London, UK, Where is River Thames?
+India, India, Which South Asian country is 12 times larger than UK?
+South America., South America., Where the Aconcagua Mountain is situates?
+Antarctica., Antarctica., Name the second smallest continent?
+Sweden, Sweden, Which Scandinavian country lies between Norway and Finland?
+Indus River, Indus River, Name the Pakistan's longest river.
+7, 7, How many rivers are there in India?
+Inner Mongolia, Inner Mongolia, Where is Hulun Lake situated?
+Nauru, Nauru, Name the third smallest country by area.
+South Australia, South Australia, Where is the Lake Torrens located?
+Arctic region, Arctic region, In which region (continent) the Greenland Island is situated?
+Taiwan, Taiwan, Which Island state was formerly known as Formosa?
+France, France, Which country owns the territory of Saint Pierre and Miquelon?
+Texas, Texas, Which American State could fit the entire world's population, inside?
+Taumatawhakatangihangak oauauotamateaturipukaka pikimaungahoronukupokaiwhe Nua kitanatahu, Taumatawhakatangihangak oauauotamateaturipukaka pikimaungahoronukupokaiwhe Nua kitanatahu, What's the second largest geographical name of any place?
+Mt. Thor, Mt. Thor, Which Mountain has the greatest Vertical drop?
+550 ft., 550 ft., How high was the tallest Iceberg of the history?
+Uganda, Uganda, Which country is the home to Lake Kioga?
+Africa, Africa, Name the continent formerly known as Alkebulan?
+Argentina, Argentina, Chile shares majority of its border with which country?
+Antarctica., Antarctica., Name the driest place on the planet.
+Gunnbjorn., Gunnbjorn., What is the highest point of Greenland Island?
+Kenya, Kenya, In which country the Lake Rudolf is situated?
+Central America, Central America, Which place has no spot more than 125 miles for the ocean?
+Laguna Salada, Laguna Salada, What is the lowest geographical point of Mexico?
+Pakistan, Pakistan, Where is Qogir situated?
+Mexico, Mexico, Where is the Lake Texcoco situated?
+Red Sea., Red Sea., Which sea separates the East African coast and the Saudi Arabian Peninsula?
+7, 7, How many main Islands are there in Bermuda country?
+A hill in New Zealand., A hill in New Zealand., What is Taumatawhakatangihangak oauauotamateaturipukaka pikimaungahoronukupokaiwhe Nua kitanatahu?
+South Africa., South Africa., Which country surrounds Lesotho?
+Wales, Wales, Where is the Llanfairpwllgwyngyllgogerychwyrndrobwyll llantysiliogogogoch village situated?
+China and Russia., China and Russia., Which 2 countries have borders with 14 countries?
+Indian Village, Indian Village, What is the meaning of the word 'Canada'?
+2 percent., 2 percent., How many Caribbean Islands are inhabited?
+16,023 ft, 16,023 ft, How high is the Mountain Puncak Juya?
+Town Hill, Town Hill, What is the highest geographical point of Bermuda?
+Hells Canyon, Nepal, Name the deepest Gorge of the world.
+Tanzania, Tanzania, In which country Mount Kilimanjaro situated?
+4, 4, How many Indian states share border with Myanmar?
+Dinara, Dinara, Name the highest point in Croatia?
+7, 7, How many countries are included in South Asia?
+Mt. Chimborazo., Mt. Chimborazo., Which Mountain is closest to the space?
+7, 7, How many countries share border with India?
+Antarctica, Antarctica, Which ice sheet has the largest reservoir of fresh water?
+River Nene, River Nene, Name the smallest river in the UK?
+Amazon, Amazon, Name the largest river drainage basin of the world.
+Atlantic Ocean., Atlantic Ocean., Nearly half of the land water is drained at which place?
+Lake Baikal, Lake Baikal, Which lake in Siberia contains more water than any other on the Earth?
+Turkmenistan, Turkmenistan, Where is Karakum Desert?
+346 Kilometers, 346 Kilometers, How long is the River Thames?
+Australia, Australia, Where is the Lake Eyre situated?
+Djibouti., Djibouti., In which country the Lake Assal is situated?
+Pacific Ocean and Indian Ocean., Pacific Ocean and Indian Ocean., Australia lies between which two oceans?
+Blue Mountains., Blue Mountains., Name the Mountains situated at the South-Eastern end of Australia?
+Sargasso Sea, Sargasso Sea, Name the only sea having no-coasts?
+Caspian Sea., Caspian Sea., What is the lowest point of Europe?
+Lake Erie and Lake Ontario, Lake Erie and Lake Ontario, Niagara falls connects which two lakes?
+Trans-Siberian Railway, Trans-Siberian Railway, Which is the longest railway in the world?
+Lake Eyre, Lake Eyre, Name the lowest elevation in Australia?
+Ural Mountains., Ural Mountains., Name the oldest mountain in the world.
+Pitcairn, Pitcairn, Name the smallest Island with a country status?
+Mt. Kosciuszko, Mt. Kosciuszko, Name the highest point in Australia?
+Mediterranean Sea., Mediterranean Sea., Name the largest sea in the world.
+Ontario and NewYork., Ontario and NewYork., Which two cities are separated by Niagara Falls?
+87 cities., 87 cities., How many cities Trans-Siberian Railway passes through?
+30 percent., 30 percent., How much area of the Earth is covered by the Continent Asia?
+Sweden, Sweden, Where is the Lake Vanern situated?
+Lake Vivi., Lake Vivi., Name the lake which is the geographical center of Russia.
+Kluchevskoy., Kluchevskoy., Name the world's largest active volcano.
+Bentley Subglacial Trench, Bentley Subglacial Trench, Name the lowest elevation of the Antarctica.
+Chile, Chile, Name the razor-thin country accounted for more than half of the South American western coastline?
+Thai Bhat, Thai Bhat, Name the monetary unit used in Thailand?
+Vinson Massif, Vinson Massif, Name the highest elevation of Antarctica.
+Russia, Russia, Where is the world's largest active volcano situated?
+12, 276 ft., 12, 276 ft., How deep is the Japan Sea?
+Russian Great Vasyugan swamp, Russian Great Vasyugan swamp, Name the largest swamp in the world.
+China., China., The total area of Siberia is equal to the area of which country?
+Sea of Salt., Sea of Salt., What's the other name of the Dead sea?
+The Andes, The Andes, Name the longest continental mountainous region in the world.
+Krakatoa, Krakatoa, Which volcano exploded in 1883 with the force of 200 megatons of TNT?
+McMurdo Dry Valleys, Antarctica, Antarctic Polar desert., What's the coldest desert in the world?
+2 million years., 2 million years., From how many years Ross Island is out of rain?
+75 percent., 75 percent., How many roads in Canada are unpaved?
+24,460 ft., 24,460 ft., How much is the depth of Java Trench, Indian Ocean?
+The Dead Sea, The Dead Sea, What is the lowest point on the Land?
+6,371 km., 6,371 km., What is the mean radius of the earth?
+Indian Ocean., Indian Ocean., Name the third largest ocean in the world.
+Puerto Rico Trench, Atlantic Ocean, Puerto Rico Trench, Atlantic Ocean, Name the second greatest depth of the oceans.
+90 degree N., 90 degree N., Where is Arctic located on the Latitude?
+India, India, Which country is the home to Dudhsagar Waterfalls?
+Tanzania, Uganda, Kenya., Tanzania, Uganda, Kenya., Name three Basin countries of the Lake Victoria.
+18,456., 18,456., How deep is the Arctic Basin?
+Yoho National Park, Yoho National Park, In which Canadian Park Takkakaw Waterfall is located?
+2000, 2000, When was the Atlantic Ocean approved as Ocean?
+Fram Basin, Fram Basin, Name the highest point of Arctic.
+Europe, Europe, Where is Mt Elbrus situated?
+Berlin, Berlin, In what city the Brandenburg Gate located?
+Manchester, Manchester, Old Trafford Stadium is situated near which city?
+Atlantic Ocean, Atlantic Ocean, Each year, which ocean grows one inch wider?
+Iraq, Iraq, In which country the gardens of Babylon situated?
+Pacific Ocean, Pacific Ocean, Each year, which ocean shrinks?
+Balkan, Balkan, Name the peninsula on which Albania and Serbia are located.
+South America, South America, Where is Valdes Peninsula?
+Death Valley, Death Valley, Which valley recorded the ever highest temperature?
+Mississippi River., Mississippi River., Which river is caused to flow backwards after the three earthquakes of 1811 and 1812?
+Kola Superdeep Borehole, Kola Superdeep Borehole, Name the ever deepest hole drilled by man with large deposits of Hydrogen?
+Ireland, Ireland, In which country is the city of Limerick situated?
+Hohe Tauern National Park, Hohe Tauern National Park, In which Austrian Park the Krimmler Waterfall is situated?
+Manchuria, Manchuria, Tell the name of the northeast part of China?
+Pidurutalagala, Pidurutalagala, Name the highest Point in Sri Lanka.
+Indian Ocean, Indian Ocean, What's the lowest point in Sri Lanka?
+Rome., Rome., Which city is closer to North Pole than New York?
+South America., South America., Which place is not in south of North America?
+Reno, Reno, Which place is farther west than St. Diego?
+K2 is the highest geographical point of Pakistan, K2 is the highest geographical point of Pakistan, What's the highest geographical point of Pakistan?
+Southern Africa, Southern Africa, Where is Kalahari Desert situated?
+Khyber Pass, Khyber Pass, Which well-known mountain pass connects Pakistan and Afghanistan?
+Indian Ocean, Indian Ocean, What is the lowest geographical point of Pakistan?
+Sri Lanka, Sri Lanka, Which Asian country is slightly larger than West Virginia?
+China, China, Name the third largest state of the world?
+Mount Fuji, Mount Fuji, What is the highest geographical point in Japan?
+New York., New York., Which state you will enter if you travel in east, north, and west in Stamford or Connecticut?
+1000 years., 1000 years., How old is the lake Mogilnoe?
+70-80 percent., 70-80 percent., How much fresh water the glaciers store?
+Africa, Africa, Which continent has a central location on the globe?
+Italy, Italy, Which country completely locks Vatican City?
+Mexico, Mexico, The Island of Cozumel is part of which country?
+Canada, Canada, Name the second largest country by area?
+Amazon., Amazon., Name the biggest river in the world.
+Lake Mogilnoe., Lake Mogilnoe., Which lake of the world has four layers of varying salinities?
+Nile, Nile, Name the longest river of the world.
+Eisenhower Interstate system., Eisenhower Interstate system., Name the system that requires one-mile in every five must be straight?
+9, 9, The territory of Amazon Rainforest is stretched to how many countries?
+The West Siberian Plain., The West Siberian Plain., Name the largest plain in the world.
+Rome, Rome, Name the first city which reached a population of 1 million.
+Siberia., Siberia., Which place acquires 25 percent of the world's forests?
+Suez Canal, Suez Canal, Which canal connects the Red and Mediterranean Sea?
+Vatican City, Vatican City, Which European country has the smallest population?
+Tokyo, Japan, Tokyo, Japan, What's the biggest city of the world?
+Asia, Asia, Which continent is the Gobi desert situated?
+Africa, Africa, Which continent is the Sahara Desert situated?
+Sovereign Military Order of Malta, Sovereign Military Order of Malta, Name the smallest sovereign identity in the world.
+Nepal, Nepal, Where is the deepest gorge in the world?
+97 percent, 97 percent, How much fresh water the Earth contains?
+Arctic Ocean., Arctic Ocean., Name the smallest ocean in the world?
+The Southern Ocean, The Southern Ocean, What's the other name of Antarctic Ocean?
+Hulunbuir, Inner Mongolia, Hulunbuir, Inner Mongolia, Name the largest city in the world by surface area?
+Algeria, Algeria, Name the largest country in Africa (By area).
+North America, North America, Which only continent lies entirely between Northern and Western Hemisphere?
+St. Marino, St. Marino, Name the oldest constitutional Republic.
+Venezuela, Venezuela, Which country is Angels Falls situated?
+New York, New York, Which city has more Jews than Tel Aviv, Israel?
+Amazon., Amazon., Name the wettest rainforest on the Earth?
+Maldives., Maldives., Name the smallest country in Asia? (By area).
+Angels Falls, Angels Falls, Name the highest waterfall.
+American Falls and Canadian Horseshoe Falls, American Falls and Canadian Horseshoe Falls, Name the two waterfalls inside the Niagara Falls?
+Asia, Asia, Which continent is joined to two others?
+Africa, Africa, Which continent has more countries than any other continent?
+Seychelles, Seychelles, Name the smallest country in Africa (By area).
+North America, North America, Which continent is joined to Asia during winters?
+Chile, Chile, Where is Arica desert situated?
+Aswan, Egypt, Aswan, Egypt, Name the driest inhabited place of the world?
+Dalol, Ethiopia., Dalol, Ethiopia., Name the hottest place of the world.
+Assam, India, Assam, India, Name the wettest place in the world.
+Average temperature of Plateau Station is -56.7C, Average temperature of Plateau Station is -56.7C, What's the average temperature of Plateau Station?
+Buenaventura, Columbia, Buenaventura, Columbia, Name the wettest inhabited place of the world?
+Atlantic Ocean, Atlantic Ocean, Which Ocean's coastline sinks four inches in every 100 years?
+Between Zaire and East Africa, Between Zaire and East Africa, Where is the Rift Valley situated?
+Surtsey., Surtsey., Which new volcanic Island was born in 1963?
+At the cost of Iceland, At the cost of Iceland, Where was Surtsey born?
+Gulf of Mexico., Gulf of Mexico., What's the largest gulf of the world?
+Hudson Bay, Canada, Hudson Bay, Canada, Name the largest bay of the world.
+Titicaca, Titicaca, Which is the highest lake level in the world?
+2,500 feet, 2,500 feet, How much Titicaca is above the sea level?
+Lagoa dos Patos, Brazil, Lagoa dos Patos, Brazil, Name the largest Lagoon?
+South America, South America, In which continent is the world's largest river system?
+Buena Bhaile, Buena Bhaile, Name the lowest mountain range.
+Norway, Norway, Where is Verdens Ende situated?
+Puentas Arenas, Puentas Arenas, Name the world's most southernmost city.
+Canada, Canada, Which country is slightly larger than United States?
+Mississippi-Missouri River System, Mississippi-Missouri River System, Name the longest river system of North America?
+North America, North America, In which continent is the Great Bear Lake?
+China, China, The autonomous territory of Macau belongs to which country?
